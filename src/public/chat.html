@@ -16,49 +16,67 @@
 
     <main>
 
-        <h1 class="page-title row gap-1">
-            <img
-                class="icon"
-                src="./images/icons/caret-left.svg" 
-                alt=""
-            >
+        <h2 class="page-title row gap-1">
+            <a id="logout-button" role="button" href="/index.html">
+                <img class="icon" src="./images/icons/caret-left.svg" alt="">
+            </a>
 
             <div>
-                Nome da <span class="text-primary">sala</span>
+                <span>Bem vindo há </span>
+                <span id="room_name" class="text-primary"></span>
             </div>
-        </h1>
+        </h2>
 
         <div class="container">
 
             <section class="chat">
-                <div class="messages">
-                    <div class="grettings">
+                <div id="messages">
+                    <!-- GRETTINGS -->
+                    <!-- <div class="grettings">
                         <span>
                             João Pedro se juntou a sala -
                             <time>
                                 12:00
                             </time>
                         </span>
+                    </div> -->
+
+                    <!-- NEW MESSAGES -->
+                    <!-- <div class="message message-to">
+                        <span>
+                            Hello -
+                            <time>
+                                12:00
+                            </time>
+                        </span>
+                    </div>
+                    <div class="message message-from">
+                        <span>
+                            Hi -
+                            <time>
+                                12:01
+                            </time>
+                        </span>
+                    </div> -->
+                </div>
+
+                <div>
+                    <div class="form-control">
+                        <input autofocus type="text" name="message_input" id="message_input"
+                            placeholder="Digite sua mensagem">
                     </div>
                 </div>
 
-                <form action="">
-                    <div class="form-control">
-                        <input 
-                            autofocus
-                            type="text" 
-                            name="message" 
-                            id="message" 
-                            placeholder="Digite sua mensagem"
-                        >
-                    </div>
-                </form>
-                
             </section>
 
 
         </div>
     </main>
 </body>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="./scripts/chat.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.7/dayjs.min.js"></script>
+
 
 </html>
