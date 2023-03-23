@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Socket</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles/main.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main>
+
+        <h1 class="page-title">
+            Socket <span class="text-primary">io</span>
+        </h1>
+
+        <div class="container">
+            <form action="chat.html">
+                <div class="form-control">
+                    <label for="room">
+                        Escolha uma sala
+                    </label>
+                    <select name="room" id="room">
+                        <option value="nodejs">NodeJs</option>
+                        <option value="ruby">Ruby</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label for="username">Digite seu usuário</label>
+                    <input 
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Username"
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                >
+                    Entrar
+                </button>
+            </form>
+        </div>    
+    </main>
+</body>
+</html>
