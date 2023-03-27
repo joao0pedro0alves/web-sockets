@@ -19,7 +19,7 @@
         </h1>
 
         <div class="container">
-            <form action="chat.html">
+            <form id='room-form' action="chat.html">
                 <div class="form-control">
                     <label for="room">
                         Escolha uma sala
@@ -46,7 +46,24 @@
                     Entrar
                 </button>
             </form>
+
+            <dialog id="alert-dialog">
+                <form class="container" method="dialog">
+               
+                    <div class="dialog-content">
+                        <p id="dialog-message-title"></p>
+                        <p id="dialog-message"></p>
+                    </div>
+
+                    <div class="dialog-actions">
+                        <button id="dialog-closer">Fechar</button>
+                    </div>
+                </form>
+            </dialog>
         </div>    
     </main>
 </body>
+
+<script src="./scripts/index.js"></script>
+
 </html>
